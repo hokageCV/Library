@@ -1,0 +1,13 @@
+body{
+    /* Created with https://www.css-gradient.com */
+background: #FFFD77;
+background: -webkit-linear-gradient(bottom right, #FFFD77, #FFAA01);
+background: -moz-linear-gradient(bottom right, #FFFD77, #FFAA01);
+background: linear-gradient(to top left, #FFFD77, #FFAA01);
+
+
+}
+
+.emphasis{
+    color: #754E01;
+}
