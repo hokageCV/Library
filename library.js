@@ -1,15 +1,3 @@
-// plan is to make a book tracker, with local storage
-// TWO kinds of Input methods should be there
-//         1) directly from the screen
-//                like https://ginnerzapata.github.io/library-app/
-//         2) from an pop up box
-//                like https://sultanbadri.github.io/virtual-library/
-
-
-// ***************************************************************
-// ***************************************************************
-
-// book class - represents a book 
 
 class Book{
     constructor(title, author, pages, read){
@@ -30,6 +18,7 @@ class UI{
 
     static addBookToList(pustak){
         const list = document.getElementById('book-table');
+        
 
         // creating row and adding book details to it
         const row = document.createElement('tr');
@@ -40,6 +29,8 @@ class UI{
             <td>${pustak.read}</td>
             <td> <a href="#" class="btn btn-danger btn-sm delete"> X </a> </td> 
         `
+        row.classList.add("emphasis")
+        
         list.appendChild(row);
     }
 
